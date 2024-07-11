@@ -17,12 +17,14 @@
 	padding: var(--padding-5xs) var(--padding-base);
 	gap: var(--gap-5xl);
 }
-.text-button {
+.text-button-sign-up {
 	position: relative;
 	line-height: 135%;
+	color: #023748;
 }
 .button-sign-up {
 	position: absolute;
+	background-color: #F5C451;
 	top: 0px;
 	right: 0px;
 	border-radius: var(--br-8xs);
@@ -53,6 +55,7 @@
 	font-size: var(--h1-size);
 	line-height: 85%;
 	text-align: center;
+	margin: 0px;
 }
 .h1-header {
 	align-self: stretch;
@@ -183,10 +186,13 @@
 	font-size: var(--text-15r-size);
 	color: rgba(2, 55, 72, 0.6);
 }
-.text-button-bold {
+.text-button-order {
 	position: relative;
 	line-height: 100%;
 	font-weight: 600;
+	font-size: var(--text-button-size);
+	color: #023748;
+	font-family: Rubik;
 }
 .button-order {
 	position: absolute;
@@ -199,6 +205,7 @@
 	align-items: center;
 	justify-content: center;
 	padding: 6px var(--padding-base);
+	border: none;
 }
 .order {
 	flex: 1;
@@ -222,6 +229,7 @@
 	align-self: stretch;
 	position: relative;
 	line-height: 90%;
+	margin: 0;
 }
 .mashed-chicken-icon {
 	width: 225px;
@@ -249,15 +257,18 @@
 	justify-content: flex-start;
 	gap: var(--gap-5xs);
 }
-.text-button-bold1 {
+.text-button-price {
 	width: 48px;
 	position: relative;
 	line-height: 100%;
 	font-weight: 600;
 	display: inline-block;
 	flex-shrink: 0;
+	font-size: var(--text-button-size);
+	color: #023748;
+	font-family: Rubik;
 }
-.button-price-chicken {
+.button-price {
 	width: 72px;
 	border-radius: var(--br-8xs);
 	background-color: var(--color-goldenrod);
@@ -267,6 +278,7 @@
 	justify-content: center;
 	padding: var(--padding-9xs) var(--padding-base);
 	box-sizing: border-box;
+	border: none;
 }
 .card-mashed-chicken {
 	flex: 1;
@@ -275,17 +287,6 @@
 	align-items: center;
 	justify-content: flex-start;
 	gap: var(--gap-5xl);
-}
-.button-price-turkey {
-	width: 72px;
-	border-radius: var(--br-8xs);
-	background-color: var(--color-goldenrod);
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	justify-content: center;
-	padding: var(--padding-9xs) var(--padding-base);
-	box-sizing: border-box;
 }
 .card-mashed-turkey {
 	flex: 1;
