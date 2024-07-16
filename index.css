@@ -87,7 +87,7 @@
 	position: relative;
 	line-height: 90%;
 	margin: 0;
-	font-size: 40px;
+	font-size: 1em;
 
 }
 .mashed-chicken-icon {
@@ -101,6 +101,7 @@
 	position: relative;
 	line-height: 100%;
 	font-weight: 600;
+	font-size: 1em;
 }
 .text-15r {
 	align-self: stretch;
@@ -255,6 +256,7 @@
 	left: -1px;
 	line-height: 100%;
 	font-weight: 600;
+	font-size: 1em;
 }
 .text-phone-order {
 	position: absolute;
