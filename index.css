@@ -7,7 +7,7 @@
 .menu {
 	position: absolute;
 	top: 0px;
-	left: calc(50% - 189.5px);
+	left: calc(50% - 190px);
 	border-radius: var(--br-8xs);
 	border: 1px solid var(--color-darkslategray-100);
 	display: flex;
@@ -20,11 +20,11 @@
 .text-button-sign-up {
 	position: relative;
 	line-height: 135%;
+	margin: 0 auto;
 	color: #023748;
 }
 .button-sign-up {
 	position: absolute;
-	background-color: #F5C451;
 	top: 0px;
 	right: 0px;
 	border-radius: var(--br-8xs);
@@ -35,6 +35,7 @@
 	justify-content: center;
 	padding: var(--padding-5xs) var(--padding-base);
 	font-size: 16px;
+	background-color: #F5C451;
 }
 .logo-icon {
 	position: absolute;
@@ -55,7 +56,7 @@
 	font-size: var(--h1-size);
 	line-height: 85%;
 	text-align: center;
-	margin: 0px;
+	margin: 0 auto;
 }
 .h1-header {
 	align-self: stretch;
@@ -73,18 +74,106 @@
 	margin-top: -34px;
 }
 .cover {
-	position: absolute;
-	width: 100%;
-	top: 0px;
-	right: 0px;
-	left: 0px;
+	align-self: stretch;
 	background-color: var(--color-goldenrod);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 40px 80px;
+	padding: var(--padding-21xl) var(--padding-61xl);
+}
+.header2 {
+	align-self: stretch;
+	position: relative;
+	line-height: 90%;
+	margin: 0;
+	font-size: 40px;
+
+}
+.mashed-chicken-icon {
+	width: 225px;
+	position: relative;
+	height: 235px;
+	object-fit: cover;
+}
+.header3-chicken {
+	align-self: stretch;
+	position: relative;
+	line-height: 100%;
+	font-weight: 600;
+}
+.text-15r {
+	align-self: stretch;
+	position: relative;
+	font-size: var(--text-15r-size);
+	line-height: 130%;
+}
+.text {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: var(--gap-5xs);
+}
+.text-button-price {
+	width: 48px;
+	font-size: 20px;
+	color: #023748;
+	font-family: Rubik;
+	position: relative;
+	line-height: 100%;
+	font-weight: 600;
+	display: inline-block;
+	flex-shrink: 0;
+}
+.button-price {
+	width: 72px;
+	border-radius: var(--br-8xs);
+	background-color: var(--color-goldenrod);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: var(--padding-9xs) var(--padding-base);
 	box-sizing: border-box;
+	border: none;
+}
+.card-mashed-chicken {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: var(--gap-5xl);
+}
+.card-mashed-turkey {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--gap-5xl);
+}
+.mashed {
+	align-self: stretch;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	gap: var(--gap-xl);
+	font-size: var(--text-button-size);
+}
+.natural-purees {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0px var(--padding-61xl);
+	gap: 40px;
+	text-align: center;
+	font-size: var(--h2-size);
 }
 .phone-icon {
 	width: 24px;
@@ -141,7 +230,7 @@
 	position: relative;
 	height: 112px;
 }
-.text-menu-footer {
+.text-about {
 	align-self: stretch;
 	position: relative;
 	line-height: 130%;
@@ -160,14 +249,14 @@
 	justify-content: flex-start;
 	gap: 12px;
 }
-.h3-order {
+.header3-order {
 	position: absolute;
 	top: 0px;
 	left: -1px;
 	line-height: 100%;
 	font-weight: 600;
 }
-.text-input {
+.text-phone-order {
 	position: absolute;
 	top: 0px;
 	left: calc(50% - 133.5px);
@@ -190,9 +279,6 @@
 	position: relative;
 	line-height: 100%;
 	font-weight: 600;
-	font-size: var(--text-button-size);
-	color: #023748;
-	font-family: Rubik;
 }
 .button-order {
 	position: absolute;
@@ -205,7 +291,6 @@
 	align-items: center;
 	justify-content: center;
 	padding: 6px var(--padding-base);
-	border: none;
 }
 .order {
 	flex: 1;
@@ -214,117 +299,26 @@
 	font-size: var(--text-button-size);
 }
 .footer {
-	position: absolute;
-	width: calc(100% - 160px);
-	top: 1562px;
-	right: 80px;
-	left: 80px;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: flex-start;
-	gap: var(--gap-xl);
-}
-.header2 {
-	align-self: stretch;
-	position: relative;
-	line-height: 90%;
-	margin: 0;
-}
-.mashed-chicken-icon {
-	width: 225px;
-	position: relative;
-	height: 235px;
-	object-fit: cover;
-}
-.header3 {
-	align-self: stretch;
-	position: relative;
-	line-height: 100%;
-	font-weight: 600;
-}
-.text-chicken {
-	align-self: stretch;
-	position: relative;
-	font-size: var(--text-15r-size);
-	line-height: 130%;
-}
-.text {
-	align-self: stretch;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	gap: var(--gap-5xs);
-}
-.text-button-price {
-	width: 48px;
-	position: relative;
-	line-height: 100%;
-	font-weight: 600;
-	display: inline-block;
-	flex-shrink: 0;
-	font-size: var(--text-button-size);
-	color: #023748;
-	font-family: Rubik;
-}
-.button-price {
-	width: 72px;
-	border-radius: var(--br-8xs);
-	background-color: var(--color-goldenrod);
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding: var(--padding-9xs) var(--padding-base);
-	box-sizing: border-box;
-	border: none;
-}
-.card-mashed-chicken {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	gap: var(--gap-5xl);
-}
-.card-mashed-turkey {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: var(--gap-5xl);
-}
-.mashed {
 	align-self: stretch;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	justify-content: center;
-	gap: var(--gap-xl);
-	font-size: var(--text-button-size);
-}
-.natural-purees {
-	position: absolute;
-	width: calc(100% - 160px);
-	top: 1037px;
-	right: 80px;
-	left: 80px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	justify-content: flex-start;
-	gap: 40px;
-	text-align: center;
-	font-size: var(--h2-size);
+	padding: 0px var(--padding-61xl);
+	gap: var(--gap-xl);
 }
 .main-container {
 	width: 100%;
 	position: relative;
 	background-color: #f4fdff;
-	height: 1717px;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 0px 0px var(--padding-21xl);
+	box-sizing: border-box;
+	gap: 80px;
 	text-align: left;
 	font-size: var(--text-15r-size);
 	color: var(--color-darkslategray-100);

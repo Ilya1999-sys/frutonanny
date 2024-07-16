@@ -9,7 +9,6 @@ body {
 	
 	/* fonts */
 	--text-button: Rubik;
-
 	
 	/* font sizes */
 	--text-button-size: 20px;
@@ -23,13 +22,15 @@ body {
 	
 	/* Gaps */
 	--gap-xl: 20px;
-	--gap-5xl: 24px;
 	--gap-base: 16px;
 	--gap-5xs: 8px;
+	--gap-5xl: 24px;
 	
 	/* Paddings */
-	--padding-9xs: 4px;
+	--padding-21xl: 40px;
+	--padding-61xl: 80px;
 	--padding-base: 16px;
+	--padding-9xs: 4px;
 	--padding-5xs: 8px;
 	
 	/* Border radiuses */
