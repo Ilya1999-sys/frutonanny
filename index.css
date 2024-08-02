@@ -8,39 +8,30 @@
 	position: absolute;
 	top: 0px;
 	left: calc(50% - 190px);
-	border-radius: var(--br-8xs);
-	border: 1px solid var(--color-darkslategray-100);
+	border-radius: var(--border-radius-normal);
+	border: 1px solid var(--color-text);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	padding: var(--padding-5xs) var(--padding-base);
-	gap: var(--gap-5xl);
-}
-.text-button-sign-up {
-	position: relative;
-	line-height: 135%;
-	margin: 0 auto;
-	color: #023748;
+	padding: var(--padding-medium) var(--padding-big);
+	gap: var(--gap-big);
 }
 .button-sign-up {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	border-radius: var(--br-8xs);
-	border: 1px solid var(--color-darkslategray-100);
+	float: right;
+	border-radius: var(--border-radius-normal);
+	border: 1px solid var(--color-text);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	padding: var(--padding-5xs) var(--padding-base);
+	padding: var(--padding-medium) var(--padding-big);
 	font-size: 16px;
 	background-color: #F5C451;
+    color: #023748;
+    line-height: 135%;
 }
 .logo-icon {
-	position: absolute;
-	top: 0px;
-	left: 0px;
 	width: 38px;
 	height: 38px;
 	overflow: hidden;
@@ -64,7 +55,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	gap: var(--gap-base);
+	gap: var(--gap-medium);
 }
 .main-picture-icon {
 	width: 964px;
@@ -75,12 +66,12 @@
 }
 .cover {
 	align-self: stretch;
-	background-color: var(--color-goldenrod);
+	background-color: var(--color-accent);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	padding: var(--padding-21xl) var(--padding-61xl);
+	padding: var(--padding-bottom-header) var(--padding-blocks);
 }
 .header2 {
 	align-self: stretch;
@@ -96,49 +87,44 @@
 	height: 235px;
 	object-fit: cover;
 }
-.header3-chicken {
+.mash-header {
 	align-self: stretch;
 	position: relative;
 	line-height: 100%;
 	font-weight: 600;
 	font-size: 1em;
 }
-.text-15r {
+.text-normal-card {
 	align-self: stretch;
 	position: relative;
-	font-size: var(--text-15r-size);
+    margin: 0;
+	font-size: var(--text-normal-size);
 	line-height: 130%;
 }
-.text {
+.card-header-text {
 	align-self: stretch;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	gap: var(--gap-5xs);
-}
-.text-button-price {
-	width: 48px;
-	font-size: 20px;
-	color: #023748;
-	font-family: Rubik;
-	position: relative;
-	line-height: 100%;
-	font-weight: 600;
-	display: inline-block;
-	flex-shrink: 0;
+	gap: var(--gap-min);
 }
 .button-price {
 	width: 72px;
-	border-radius: var(--br-8xs);
-	background-color: var(--color-goldenrod);
+	border-radius: var(--border-radius-normal);
+	background-color: var(--color-accent);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	padding: var(--padding-9xs) var(--padding-base);
+	padding: var(--padding-min);
 	box-sizing: border-box;
 	border: none;
+    color: #023748;
+    font-family: Rubik;
+    line-height: 100%;
+    font-weight: 600;
+    font-size: 20px;
 }
 .card-mashed-chicken {
 	flex: 1;
@@ -146,7 +132,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	gap: var(--gap-5xl);
+	gap: var(--gap-big);
 }
 .card-mashed-turkey {
 	flex: 1;
@@ -154,7 +140,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: var(--gap-5xl);
+	gap: var(--gap-big);
 }
 .mashed {
 	align-self: stretch;
@@ -162,7 +148,7 @@
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: center;
-	gap: var(--gap-xl);
+	gap: var(--gap-normal);
 	font-size: var(--text-button-size);
 }
 .natural-purees {
@@ -171,7 +157,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 0px var(--padding-61xl);
+	padding: 0px var(--padding-blocks);
 	gap: 40px;
 	text-align: center;
 	font-size: var(--h2-size);
@@ -188,59 +174,48 @@
 	line-height: 130%;
 }
 .phone {
-	position: absolute;
-	top: 0px;
-	left: 0px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	gap: var(--gap-5xs);
+	gap: var(--gap-min);
 }
 .mail {
-	position: absolute;
-	top: 40px;
-	left: 0px;
+	padding-top: var(--padding-big);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	gap: var(--gap-5xs);
+	gap: var(--gap-min);
 }
 .telegram {
-	border-radius: var(--br-81xl);
-	background-color: var(--color-goldenrod);
+	border-radius: var(--border-radius-large);
+	background-color: var(--color-accent);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	padding: var(--padding-9xs);
+	padding: var(--padding-min);
 }
 .social-networks {
-	position: absolute;
-	top: 80px;
-	left: 0px;
+	padding-top: var(--padding-big);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	gap: var(--gap-base);
+	gap: var(--gap-medium);
 }
 .contacts {
 	flex: 1;
 	position: relative;
 	height: 112px;
 }
-.text-about {
+.text-menu-bottom {
 	align-self: stretch;
 	position: relative;
 	line-height: 130%;
-	white-space: pre-wrap;
-}
-.text-products {
-	align-self: stretch;
-	position: relative;
-	line-height: 130%;
+    color: inherit;
+	text-decoration: none;
 }
 .menu-bottom {
 	flex: 1;
@@ -250,64 +225,71 @@
 	justify-content: flex-start;
 	gap: 12px;
 }
-.header3-order {
-	position: absolute;
-	top: 0px;
-	left: -1px;
-	line-height: 100%;
-	font-weight: 600;
-	font-size: 1em;
-}
-.text-phone-order {
-	position: absolute;
-	top: 0px;
-	left: calc(50% - 133.5px);
-	line-height: 130%;
-	display: inline-block;
-	width: 218px;
-}
-.phone-input {
-	position: absolute;
-	top: 36px;
-	left: 0px;
-	border-bottom: 1px solid var(--color-darkslategray-100);
-	box-sizing: border-box;
-	width: 267px;
-	height: 23px;
-	font-size: var(--text-15r-size);
-	color: rgba(2, 55, 72, 0.6);
-}
-.text-button-order {
-	position: relative;
-	line-height: 100%;
-	font-weight: 600;
-}
-.button-order {
-	position: absolute;
-	top: 83px;
-	left: 0px;
-	border-radius: var(--br-8xs);
-	background-color: var(--color-goldenrod);
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding: 6px var(--padding-base);
-}
-.order {
-	flex: 1;
-	position: relative;
-	height: 115px;
-	font-size: var(--text-button-size);
-}
+.order-header {
+    align-self: stretch;
+    position: relative;
+    line-height: 100%;
+    font-weight: 600;
+    }
+    .text-phone-order {
+    line-height: 130%;
+    display: inline-block;
+    width: 218px;
+    }
+    .phone-input {
+    align-self: stretch;
+    position: relative;
+    border-bottom: 1px solid #023748;
+    box-sizing: border-box;
+    height: 23px;
+    font-size: 15px;
+    color: rgba(2, 55, 72, 0.6);
+    }
+    .header-input {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-medium);
+    }
+    .button-order {
+	margin-top: 8px;
+    border-radius: 5px;
+    background-color: #f5c451;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    line-height: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    color: #023748;
+    }
+    .order {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-big);
+    text-align: left;
+    font-size: 20px;
+    color: #023748;
+    font-family: Rubik;
+    }
 .footer {
 	align-self: stretch;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: flex-start;
-	padding: 0px var(--padding-61xl);
-	gap: var(--gap-xl);
+	padding: 0px var(--padding-blocks);
+	gap: var(--gap-normal);
 }
 .main-container {
 	width: 100%;
@@ -318,12 +300,11 @@
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	padding: 0px 0px var(--padding-21xl);
+	padding: 0px 0px var(--padding-bottom-header);
 	box-sizing: border-box;
 	gap: 80px;
 	text-align: left;
-	font-size: var(--text-15r-size);
-	color: var(--color-darkslategray-100);
-	font-family: var(--text-button);
+	font-size: var(--text-normal-size);
+	color: var(--color-text);
+	font-family: Rubik;
 }
-
